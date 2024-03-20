@@ -5,7 +5,7 @@
 --verde:#6FFF57;
 --branco:#FFFFFF;
 --botao-atiovo:#3A375E;
---botao-inativo:rgba(58,55,94,0.3);
+--botao-inativo:rgba(58,55,94,0.5);
 --texto-fundo:rgba(58,55,94,0.3);
 }
 body{
@@ -53,12 +53,29 @@ border-top: none;
 border-radius: 40px 40px 0 0;
 }
 
-.botoes{
+.botoes.ativo{
 display:block;
 }
 .ativo{background-color: var(--botao-atiovo);
 border-bottom: 4px solid var(--verde);
 }
+ aba-conteudo-atico{
+    display: block;
+ }
+ .aba.conteudo{
+    display: none;
+ }
+
+.abas-texto{
+
+    background-color: var(--botao-ativo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+
+}
+
+
+
 @media screen and (min-width:750px){
 .botoes{
 display:flex;
